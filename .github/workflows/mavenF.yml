@@ -31,7 +31,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Deploy Docker image
       with:
-          image: izabelaapm/aula_maven_f
+          image: izabelaapm/aula_maeven_f
           tags: 1.0
           registry: docker.io
           dockerfile: dockerfile
