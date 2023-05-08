@@ -2,9 +2,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Deploy Docker image
       with:
-          image: nisflei/aula_maven_f
+          image: izabelaapm/aula_maven_f
           tags: 1.0
           registry: docker.io
           dockerfile: dockerfile
